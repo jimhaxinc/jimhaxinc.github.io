@@ -1,4 +1,4 @@
-# Carrot's COMP1602 CW 2023 Calculator
+# Carrot's COMP1603 CW 2023 Calculator
 
 This project comprises of a website and a C++ program that enables classmates to input their grades for the COMP1602 coursework and calculate their final grade. The website was developed using HTML, CSS, and JavaScript, while the C++ program was created using c++20.
 
