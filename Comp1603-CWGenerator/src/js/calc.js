@@ -19,12 +19,12 @@ form.addEventListener('submit', function (event) {
 });
 
 function calculateGrade(grades) {
-    return ((
-        (grades[0] / 100 * 0.06) +
-        (grades[1] / 100 * 0.07) +
-        (grades[2] / 50 * 0.07) +
-        (grades[3] / 30 * 0.15) +
-        (grades[4] / 65 * 0.15)
-    ))*100;
+    return Math.ceil(((
+        (grades[0] / 20 * 0.06) +
+        (grades[1] / 25 * 0.06) +
+        (grades[2] / 25 * 0.08) +
+        (((grades[3] <= 26) ? grades[3] : 26) / 26 * 0.15) +
+        (grades[4] / 30 * 0.15)
+    ))*100);
 }
 
